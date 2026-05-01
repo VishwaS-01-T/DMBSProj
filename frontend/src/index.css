@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-base-bg: #F8F9FB;
+  --color-base-surface: #FFFFFF;
+  --color-base-surface2: #F1F4F8;
+  --color-base-border: #E4E8EF;
+  
+  --color-brand-primary: #2C63E5;
+  --color-brand-primarySoft: #EEF3FD;
+  --color-brand-accent: #00C6A2;
+  
+  --color-scholarship-external: #5B6AF0;
+  --color-scholarship-merit: #F59E0B;
+  --color-scholarship-athletics: #10B981;
+  --color-scholarship-mcm: #8B5CF6;
+  
+  --color-status-approved: #10B981;
+  --color-status-pending: #F59E0B;
+  --color-status-rejected: #EF4444;
+  --color-status-review: #3B82F6;
+  --color-status-expired: #9CA3AF;
+  
+  --color-text-primary: #111827;
+  --color-text-secondary: #6B7280;
+  --color-text-muted: #9CA3AF;
+  
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+  
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.10);
+  --shadow-card: 0 2px 8px rgba(44,99,229,0.07);
+}
+
+:root {
+  color-scheme: light;
+  font-family: var(--font-sans);
+  background: var(--color-base-bg);
+  color: var(--color-text-primary);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-base-bg);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.glass {
+  background: var(--color-base-surface);
+  border: 1px solid var(--color-base-border);
+}
